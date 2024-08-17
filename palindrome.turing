@@ -1,0 +1,22 @@
+# Acepta palíndromes de hileras de símbolos a y b
+entrada: abba
+inicio: inicio
+reglas:
+# estado, lectura, escritura, movimiento, siguiente
+inicio,a,_,>,tieneA
+inicio,b,_,>,tieneB
+inicio,_,,>,aceptada
+tieneA,a|b,,>,tieneA
+tieneA,_,,<,esA
+tieneB,a|b,,>,tieneB
+tieneB,_,,<,esB
+esA,a,_,<,atras
+esA,b,,>,rechazada
+esA,_,,>,aceptada
+esB,a,,>,rechazada
+esB,b,_,<,atras
+esB,_,,>,aceptada
+atras,a|b,,<,atras
+atras,_,,>,inicio
+aceptada,,,,
+rechazada,,,,

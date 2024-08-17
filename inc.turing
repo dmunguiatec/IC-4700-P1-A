@@ -1,0 +1,10 @@
+# Incrementa el número binario en 1
+entrada: 1011
+inicio: derecha
+reglas:
+# estado, lectura, escritura, movimiento, siguiente
+derecha,1|0,,>,derecha
+derecha,_,,<,acarreo
+acarreo,1,0,<,acarreo
+acarreo,0|_,1,<,fin
+fin,,,,  
