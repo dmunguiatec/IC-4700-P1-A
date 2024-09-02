@@ -1,5 +1,5 @@
 IC-4700 Lenguajes de programación  
-Prof. Diego Munguia Molina  
+Prof. Diego Munguía Molina  
 IC-AL  
 ---
 # Proyecto 1
