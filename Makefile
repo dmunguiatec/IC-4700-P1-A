@@ -21,6 +21,6 @@ clean:
 	rm -f $(OBJ_DIR)/*.o $(TARGET)
 
 vg:
-	valgrind --leak-check=full --show-leak-kinds=all --track-origins=yes --verbose $(TARGET)
+	valgrind --leak-check=full --show-leak-kinds=all --track-origins=yes --verbose $(TARGET) inc.turing
 
 .PHONY: all clean vg
