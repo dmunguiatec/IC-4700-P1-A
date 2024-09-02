@@ -1,5 +1,5 @@
 CC = gcc
-CFLAGS = -I./include -Og -std=c17 -Wall
+CFLAGS = -I./include -ggdb -std=c17 -Wall
 
 SRC_DIR = ./src
 OBJ_DIR = ./obj
